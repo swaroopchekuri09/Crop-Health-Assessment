@@ -12,7 +12,7 @@ from repositories.recommendation_repository import RecommendationRepository
 from ai.ai_service import AIService, AIServiceError
 from ai.preprocessing import ImageValidationError
 
-UPLOAD_DIR = os.getenv("UPLOAD_DIR", "uploads")
+UPLOAD_DIR = os.getenv("UPLOAD_DIR", "/tmp/uploads")
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 
