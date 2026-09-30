@@ -16,7 +16,7 @@ from api.assessments import router as assessments_router
 from api.recommendations import router as recommendations_router
 from api.health import router as health_router
 
-UPLOAD_DIR = os.getenv("UPLOAD_DIR", "uploads")
+UPLOAD_DIR = os.getenv("UPLOAD_DIR", "/tmp/uploads")
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 
