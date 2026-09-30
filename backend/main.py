@@ -8,13 +8,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from backend.database.connection import init_db_indexes
-from backend.ai.model_loader import load_model
-from backend.api.auth import router as auth_router
-from backend.api.crops import router as crops_router
-from backend.api.assessments import router as assessments_router
-from backend.api.recommendations import router as recommendations_router
-from backend.api.health import router as health_router
+from database.connection import init_db_indexes
+from ai.model_loader import load_model
+from api.auth import router as auth_router
+from api.crops import router as crops_router
+from api.assessments import router as assessments_router
+from api.recommendations import router as recommendations_router
+from api.health import router as health_router
 
 UPLOAD_DIR = os.getenv("UPLOAD_DIR", "uploads")
 os.makedirs(UPLOAD_DIR, exist_ok=True)
