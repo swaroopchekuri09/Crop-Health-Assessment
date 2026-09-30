@@ -1,12 +1,12 @@
 from typing import Optional
 from fastapi import APIRouter, Depends, UploadFile, File, Form, Query, status
-from backend.schemas.assessment import (
+from schemas.assessment import (
     AssessmentResponse,
     AssessmentListResponse,
     AssessmentStatsResponse
 )
-from backend.services.assessment_service import AssessmentService
-from backend.security.security import get_current_user_id
+from services.assessment_service import AssessmentService
+from security.security import get_current_user_id
 
 router = APIRouter(prefix="/api/assessments", tags=["Assessments"])
 

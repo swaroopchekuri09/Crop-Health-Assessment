@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, status
-from backend.schemas.auth import UserRegister, UserLogin, TokenResponse, UserResponse
-from backend.services.auth_service import AuthService
-from backend.security.security import get_current_user_id
+from schemas.auth import UserRegister, UserLogin, TokenResponse, UserResponse
+from services.auth_service import AuthService
+from security.security import get_current_user_id
 
 router = APIRouter(prefix="/api/auth", tags=["Authentication"])
 

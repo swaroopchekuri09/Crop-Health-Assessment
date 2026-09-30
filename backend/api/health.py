@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from backend.database.connection import check_db_health
-from backend.ai.model_loader import get_model_status
+from database.connection import check_db_health
+from ai.model_loader import get_model_status
 
 router = APIRouter(prefix="/api/health", tags=["Health"])
 

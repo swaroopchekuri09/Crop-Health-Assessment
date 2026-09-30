@@ -1,8 +1,8 @@
 from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
 from datetime import datetime
-from backend.schemas.crop import CropResponse
-from backend.schemas.recommendation import RecommendationResponse
+from schemas.crop import CropResponse
+from schemas.recommendation import RecommendationResponse
 
 
 class PredictionDetail(BaseModel):

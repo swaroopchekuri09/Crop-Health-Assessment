@@ -1,7 +1,7 @@
 from datetime import datetime, timezone
 from typing import Optional, Dict, Any
 from bson import ObjectId
-from backend.database.collections import get_users_collection
+from database.collections import get_users_collection
 
 
 class UserRepository:

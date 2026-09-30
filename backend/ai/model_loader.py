@@ -79,7 +79,7 @@ def is_model_available() -> bool:
 
 
 def get_model_status() -> Dict[str, Any]:
-    from backend.ai.class_mapping import MODEL_CLASSES
+    from ai.class_mapping import MODEL_CLASSES
     actual_crops = sorted(list(set(v["crop"] for v in MODEL_CLASSES.values())))
     session = get_session()
     if session is not None:

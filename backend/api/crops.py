@@ -1,8 +1,8 @@
 from typing import List, Optional
 from fastapi import APIRouter, HTTPException, Query, status
-from backend.repositories.crop_repository import CropRepository
-from backend.repositories.disease_repository import DiseaseRepository
-from backend.schemas.crop import CropResponse, CropDetailResponse, DiseaseSummary
+from repositories.crop_repository import CropRepository
+from repositories.disease_repository import DiseaseRepository
+from schemas.crop import CropResponse, CropDetailResponse, DiseaseSummary
 
 router = APIRouter(prefix="/api/crops", tags=["Crops"])
 

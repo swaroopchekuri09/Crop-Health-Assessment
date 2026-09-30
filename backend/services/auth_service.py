@@ -1,8 +1,8 @@
 from typing import Dict, Any, Optional
 from fastapi import HTTPException, status
-from backend.repositories.user_repository import UserRepository
-from backend.repositories.assessment_repository import AssessmentRepository
-from backend.security.security import hash_password, verify_password, create_access_token
+from repositories.user_repository import UserRepository
+from repositories.assessment_repository import AssessmentRepository
+from security.security import hash_password, verify_password, create_access_token
 
 
 class AuthService:

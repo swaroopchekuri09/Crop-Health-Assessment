@@ -1,6 +1,6 @@
 from typing import Optional, Dict, Any
-from backend.repositories.recommendation_repository import RecommendationRepository
-from backend.repositories.disease_repository import DiseaseRepository
+from repositories.recommendation_repository import RecommendationRepository
+from repositories.disease_repository import DiseaseRepository
 
 
 class RecommendationService:

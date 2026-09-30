@@ -1,5 +1,5 @@
 from pymongo.collection import Collection
-from backend.database.connection import get_db
+from database.connection import get_db
 
 
 def get_users_collection() -> Collection:

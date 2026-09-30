@@ -1,7 +1,7 @@
 from datetime import datetime, timezone
 from typing import Optional, Dict, Any, List
 from bson import ObjectId
-from backend.database.collections import get_recommendations_collection
+from database.collections import get_recommendations_collection
 
 
 class RecommendationRepository:

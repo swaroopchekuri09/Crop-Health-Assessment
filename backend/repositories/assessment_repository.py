@@ -1,7 +1,7 @@
 from datetime import datetime, timezone
 from typing import Optional, List, Dict, Any, Tuple
 from bson import ObjectId
-from backend.database.collections import get_assessments_collection
+from database.collections import get_assessments_collection
 
 
 class AssessmentRepository:

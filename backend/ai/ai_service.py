@@ -2,14 +2,14 @@ import os
 from typing import Dict, Any, List, Optional
 import numpy as np
 from PIL import Image
-from backend.ai.model_loader import get_session, is_model_available
-from backend.ai.preprocessing import (
+from ai.model_loader import get_session, is_model_available
+from ai.preprocessing import (
     validate_image_bytes,
     check_plant_suitability,
     preprocess_for_onnx,
     ImageValidationError
 )
-from backend.ai.class_mapping import get_class_info
+from ai.class_mapping import get_class_info
 
 CONFIDENCE_THRESHOLD_HIGH = float(os.getenv("AI_CONFIDENCE_THRESHOLD_HIGH", "0.80"))
 CONFIDENCE_THRESHOLD_MODERATE = float(os.getenv("AI_CONFIDENCE_THRESHOLD_MODERATE", "0.60"))

@@ -1,7 +1,7 @@
 from typing import Optional, Dict, Any, List
 from bson import ObjectId
-from backend.repositories.disease_repository import DiseaseRepository
-from backend.repositories.crop_repository import CropRepository
+from repositories.disease_repository import DiseaseRepository
+from repositories.crop_repository import CropRepository
 
 
 class DiseaseService:

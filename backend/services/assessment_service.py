@@ -5,12 +5,12 @@ from typing import Dict, Any, Optional, List
 from bson import ObjectId
 from fastapi import HTTPException, status
 
-from backend.repositories.assessment_repository import AssessmentRepository
-from backend.repositories.crop_repository import CropRepository
-from backend.repositories.disease_repository import DiseaseRepository
-from backend.repositories.recommendation_repository import RecommendationRepository
-from backend.ai.ai_service import AIService, AIServiceError
-from backend.ai.preprocessing import ImageValidationError
+from repositories.assessment_repository import AssessmentRepository
+from repositories.crop_repository import CropRepository
+from repositories.disease_repository import DiseaseRepository
+from repositories.recommendation_repository import RecommendationRepository
+from ai.ai_service import AIService, AIServiceError
+from ai.preprocessing import ImageValidationError
 
 UPLOAD_DIR = os.getenv("UPLOAD_DIR", "uploads")
 os.makedirs(UPLOAD_DIR, exist_ok=True)
